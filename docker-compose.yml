@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+    exemple.php:
+        image: elitonluiz1989/php
+
+        container_name: exemple.php
+
+        ports: 
+            - "8000:8000"
+            - "9000:9000"
+
+        volumes: 
+            - ./exemple/:/var/wwww/html/
+
+        working_dir: /var/wwww/html/
+
+        command: php -S 0.0.0.0:8000
