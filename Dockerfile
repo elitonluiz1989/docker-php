@@ -1,7 +1,7 @@
-FROM php:cli-alpine
+FROM php:fpm-alpine
 
 LABEL maintainer="elitonluiz1989@gmail.com"
-LABEL version="1.0.1"
+LABEL version="1.2.0"
 
 RUN apk update; \
     apk upgrade;
